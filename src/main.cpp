@@ -17,8 +17,6 @@ int main(int argc, char* argv[]) {
 			outtextxy(10, 10, L"Server mode selected");
 		}
 	}
-	
-	
 
 	_getch();
 	closegraph();
