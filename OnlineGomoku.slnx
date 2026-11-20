@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="OnlineGomoku.vcxproj" Id="ca049153-d022-48e9-9715-0f5bd2178076" />
+</Solution>
