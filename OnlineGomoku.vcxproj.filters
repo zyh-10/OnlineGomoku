@@ -21,6 +21,12 @@
     <ClCompile Include="src\board.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\net.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\game_config.h">

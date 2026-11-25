@@ -7,6 +7,7 @@ constexpr int CANVAS_HEIGHT = 640; // window height
 constexpr int BOARD_SIZE = 15;   // 15×15 chessboard
 constexpr int CELL_SIZE = 40;   // pixel size of each cell
 constexpr int ORIGIN = 40;	  // pixel coordinate of the origin point
+constexpr int CHESS_R = CELL_SIZE / 2 - 5; // radius of chess pieces	
 
 /*configuration of game*/
 enum class chesstype{empty=0,black,white};

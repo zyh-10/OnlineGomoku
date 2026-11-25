@@ -1,12 +1,11 @@
-﻿#include <graphics.h>
+﻿#include <Windows.h>
+#include <graphics.h>
 #include <conio.h>
 #include "game_config.h"
 #include "board.h"
 
 int main(int argc, char* argv[]) {
-	initgraph(CANVAS_WIDTH, CANVAS_HEIGHT);
-	setbkcolor(RGB(247, 207, 122));
-	cleardevice();
+	init_chesboard();
 	draw_chessboard();
 
 	if (argc > 1 ) {
@@ -18,7 +17,17 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
-	_getch();
-	closegraph();
+	while (1) {
+		if(MouseHit()) {
+			MOUSEMSG mousemsg = GetMouseMsg();
+			if (mousemsg.uMsg == WM_LBUTTONUP) {
+				draw_chess(mousemsg.x, mousemsg.y, chesstype::black);
+				FlushBatchDraw();
+			}
+		}
+		Sleep(10);
+	}	
+	close_chessboard();
+
 	return 0;
 }
